@@ -1,7 +1,356 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/fontAwsome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+    <!-- preloader start -->
+    <div class="preloader">
+        <span></span>
+    </div>
+    <!-- preloader End -->
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <!-- Brand -->
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Mobile App</a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+             <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-scroll-nav="0" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-scroll-nav="1" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-scroll-nav="2" href="#">Screenshots</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Home section start-->
+    <section class="home d-flex align-items-center" id="home" data-scroll-index="0">
+        <div class="effect-wrap">
+            <i class="fas fa-plus effect effect-1"></i>
+            <i class="fas fa-plus effect effect-2"></i>
+            <i class="fas fa-circle-notch effect effect-3"></i>
+        </div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <div class="home-text">
+                        <h1>Best Mobile App For Your Business</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, possimus ipsam ullam itaque commodi voluptatem aliquid dignissimos blanditiis, iste at impedit, velit earum harum corrupti odio non? Facere, sequi repellat. </p>
+                        <div class="home-btn">
+                            <a href="#" class="btn btn-1" data-scroll-goto="3">Ha knappar för butikerna här</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 text-center">
+                    <div class="home-img">
+                        <div class="circle"></div>
+                        <img src="img/app-screenshots/5.png" alt="Landing">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Home section End-->
+
+    <!-- Features section Start -->
+    <section class="features section-padding" id="features" data-scroll-index="1">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title">
+                        <h2>Awesome <span>Features</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="owl-carousel features-carousel">
+                    <div class="features-item">
+                        <div class="icon"><i class="fas fa-code"></i></div>
+                        <h3>Clean Code</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, possimus ipsam ullam itaque commodi </p>
+                    </div>
+                    <div class="features-item">
+                        <div class="icon"><i class="fas fa-edit"></i></div>
+                        <h3>Auto Install System</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, possimus ipsam ullam itaque commodi </p>
+                    </div>
+                    <div class="features-item">
+                        <div class="icon"><i class="fas fa-paint-brush"></i></div>
+                        <h3>Pixel perfect Design</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, possimus ipsam ullam itaque commodi </p>
+                    </div>
+                    <div class="features-item">
+                        <div class="icon"><i class="fas fa-check"></i></div>
+                        <h3>Fast Load App</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia, possimus ipsam ullam itaque commodi </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Features section End -->
+
+    <!-- fun factes section start -->
+    <section class="fun-facts section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-5">
+                    <div class="fun-facts-img text-center">
+                        <img src="img/app-screenshots/5.png" alt="Fun Facts">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-7">
+                    <div class="section-title">
+                        <h2>Fun <span>Facts</span> </h2>
+                    </div>
+                    <div class="fun-facts-text">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio quibusdam ex ea dolorum laudantium asperiores consequuntur et maiores cupiditate repellendus. Architecto expedita sit at ad sed aliquid suscipit obcaecati vero?</p>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="fun-fact-item style-1">
+                                    <h3>4000</h3>
+                                    <span>Downloads</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="fun-fact-item style-2">
+                                    <h3>200</h3>
+                                    <span>Likes</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="fun-fact-item style-3">
+                                    <h3>500</h3>
+                                    <span>Star Rate</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="fun-fact-item style-4">
+                                    <h3>150</h3>
+                                    <span>AWARDS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fun factes section End -->
+
+
+    <!-- App screenshots section start -->
+    <section class="app-screenshots section-padding" data-scroll-index="2" id="screenshots">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title">
+                        <h2>App <span>Screenshots</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="owl-carousel screenshots-carousel">
+                    <div class="screenshot-item">
+                        <img src="img/app-screenshots/5.png" alt="screenshots">
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="img/app-screenshots/6.png" alt="screenshots">
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="img/app-screenshots/7.png" alt="screenshots">
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="img/app-screenshots/5.png" alt="screenshots">
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="img/app-screenshots/6.png" alt="screenshots">
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="img/app-screenshots/7.png" alt="screenshots">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- App screenshots section End -->
+
+    <!-- Faq section Start -->
+    <section class="faq section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title">
+                        <h2>Frequently <span>Asked</span> Queries</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div id="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-header" data-toggle="collapse" data-target="#collapse-01">
+                                <h3>100% Fluid Responsive - Fits any device perfectly</h3>
+                            </div>
+                            <div class="collapse show" id="collapse-01" data-parent="#accordion">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum laudantium eum ipsum ipsam quae vitae aspernatur autem unde praesentium? Ea incidunt animi quod amet voluptates deserunt? Esse voluptatum sint enim.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <div class="accordion-header collapsed" data-toggle="collapse" data-target="#collapse-02">
+                                <h3>Clean Code</h3>
+                            </div>
+                            <div class="collapse" id="collapse-02" data-parent="#accordion">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum laudantium eum ipsum ipsam quae vitae aspernatur autem unde praesentium? Ea incidunt animi quod amet voluptates deserunt? Esse voluptatum sint enim.</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="accordion-item">
+                            <div class="accordion-header collapsed" data-toggle="collapse" data-target="#collapse-03">
+                                <h3>Flat, modern and clean Design</h3>
+                            </div>
+                            <div class="collapse" id="collapse-03" data-parent="#accordion">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum laudantium eum ipsum ipsam quae vitae aspernatur autem unde praesentium? Ea incidunt animi quod amet voluptates deserunt? Esse voluptatum sint enim.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header collapsed" data-toggle="collapse" data-target="#collapse-04">
+                                <h3>Custom Font support</h3>
+                            </div>
+                            <div class="collapse" id="collapse-04" data-parent="#accordion">
+                                <div class="accordion-body">
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum laudantium eum ipsum ipsam quae vitae aspernatur autem unde praesentium? Ea incidunt animi quod amet voluptates deserunt? Esse voluptatum sint enim.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Faq section End -->
+
+
+
+    <!-- Footer section start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-col">
+                        <h3>About Us</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et nihil, quasi provident saepe, omnis commodi voluptatibus fugiat eaque fuga eveniet inventore </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-col">
+                        <h3>Company</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#">Term & condition</a>
+                            </li>
+                            <li>
+                                <a href="#">lates blogs</a>
+                            </li>
+                            <li>
+                                <a href="#">App services</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-col">
+                        <h3>Quik LInks</h3>
+                        <ul>
+                            <li>
+                                <a href="#" data-scroll-nav="0">Home</a>
+                            </li>
+                            <li>
+                                <a href="#" data-scroll-nav="1">Features</a>
+                            </li>
+                            <li>
+                                <a href="#" data-scroll-nav="2">Screenshots</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-col">
+                        <h3>Social Pages</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="#">Twitter</a>
+                            </li>
+                            <li>
+                                <a href="#">instegram</a>
+                            </li>
+                            <li>
+                                <a href="#">Linkedin</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="copyright-text">&copy;2021 @saadany</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer section End -->
+
+    <!-- Toggle Theme End ligt and dark mode-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/scrollIt.min.js"></script>
+    <script src="js/script.js"></script>
+
+
 </body>
+
 </html>
