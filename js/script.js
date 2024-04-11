@@ -45,44 +45,6 @@ $(".screenshots-carousel").owlCarousel({
   },
 });
 
-/********* Testimonials********* */
-$(".testimonials-carousel").owlCarousel({
-  loop: true,
-  margin: 10,
-  autoplay: true,
-  responsiveClass: true,
-  responsive: {
-    0: {
-      items: 1,
-    },
-    600: {
-      items: 2,
-    },
-    1000: {
-      items: 3,
-    },
-  },
-});
-
-/********** team-carousel ************* */
-$(".team-carousel").owlCarousel({
-  loop: true,
-  margin: 10,
-  // autoplay: true,
-  responsiveClass: true,
-  responsive: {
-    0: {
-      items: 1,
-    },
-    600: {
-      items: 2,
-    },
-    1000: {
-      items: 3,
-    },
-  },
-});
-
 /****************** page scrolling ***************/
 $.scrollIt({
   topOffset: -50,
@@ -96,15 +58,34 @@ $(document).ready(function () {
   });
 });
 //TODO ta in rätt screenshots...
-// ta in rätt font till app name navbar..
+//! Ta bort screenshots sektionen. Ha bara en screen shot på startsidan och sen ta fram flera bilder på promo-cards..
+//  Ha features listan.
+//sno lite copy från appbutikens text?
 // lägg till knappar till officiella butiksknapparna
 //fixa copy.
 //ha med logon i navbaren eller någonstanns? i fottern kanske?
-//kanske ta in någon cool js/css för att visa app screenshots. Interaktivt? Lite so nookapp.io auto scroll
-//kanske visa upp själva promo-card bilder och inte rena screenshots. Några såna i stycket fun facts?
+//Om man är inne på en stor webläsare så visa qrkod för playstore/appstore.. dölj den i repsonse/css läge.
 
-//GÖR DEN EXTREMT MYCKET Mindre... skippa allt onödigt..
-//fottern ska vara minimal. länkar till appstores igen, instagram, email.
-//skit i faq just nu. skit i navbar...
-//slå ihop awseom features och fun facts till ett stycke med lite screen shots och förklarande text.
-//Ha med lite text från onboarding.. kring att det är community based osv..
+//TODO kolla på notion vad jag behöver inför release... gå igeom o verkligen välj vad som behöver göras i vilken ordning..
+//TODO lås ner api... det fungerade inte längre? elelr vad var problemet?
+//Features: delning och fråga om app review kommer seanre..
+//kör ut till riktiga butikerna... var inte rädd för det..
+
+//TODO stickers kolla med nookapp.. tokopedia?
+//designa en sticker med QR-länk till playstore/appstore.
+//stickerns ska ha qr code. namn: Promo Pals Bali. slogan: Maximize Bali, minimize costs.
+//kanske min logo? i mitten av qr koden kanske?
+//Tänker mig qr kod till vänster med ikon i mitten av koden. sen till höger två rader text App namn + slogan.
+//kanske också inkludera instagram/landingpage url under qr.koden
+//https://me-qr.com/qr-code-generator/qr#shape
+
+//fottern ska vara minimal. länkar till appstores igen, instagram, email, donation? (om donation så ha en liten för-text i footern om att vi är litet som bara gör det här vid sidan av. Om du känner att du fått värde så uppskattar vi en donation för att kunna fortsätta förbättra promo pals)
+
+//Instagram kan innehålla lite posts från min vardag när jag är ute på cafe/restarungar. Nya promos som kommit upp.
+// - nya promos som kommit upp
+// - nya features som släpps
+// - Be om feedback
+// - Fråga vad ni skulle vilja se?
+// - Be om fler tips
+// - Post om hur många taco tuesdays vi har.
+// - Lite insider statisitk. Antal användare, antal promos, antal dagliga användare, mest besökta promon etc..

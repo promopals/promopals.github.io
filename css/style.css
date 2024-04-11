@@ -4,6 +4,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+@font-face {
+    font-family: Qlassik;
+    src: url("Qlassik_TB.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Qlassik;
+    font-weight: bold;
+    src: url("QlassikBold_TB.otf") format("opentype");
+}
+
 /*----------------
     Global css
 -------------------*/
@@ -253,9 +264,10 @@ ul {
 -------------------*/
 
 .navbar {
-    background-color: transparent;
+    background-color: var(--main-to-dark-color);
     padding: 20px 0;
     transition: all 0.5s ease;
+    font-family: 'Qlassik', 'Poppins', sans-serif;
 }
 
 .navbar.sticky {
@@ -322,6 +334,14 @@ ul {
 
 .home .home-btn {
     margin-top: 40px;
+}
+
+.home .home-btn .play-store{
+    height: 80px;
+}
+
+.home .home-btn .app-store{
+    height: 55px;
 }
 
 .home .home-btn .video-play-button {
@@ -803,5 +823,12 @@ ul {
     }
     .section-title h2 {
         font-size: 30px;
+    }
+    .home .home-btn .play-store{
+        height: 60px;
+    }
+    
+    .home .home-btn .app-store{
+        height: 40px;
     }
 }
