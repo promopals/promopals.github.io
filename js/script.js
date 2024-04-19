@@ -2,49 +2,6 @@ $(window).on("load", function () {
   $(".preloader").fadeOut("slow");
 });
 
-window.addEventListener("scroll", function () {
-  const navbar = document.querySelector(".navbar");
-  navbar.classList.toggle("sticky", window.scrollY > 90);
-});
-
-/**********Features********  */
-$(".features-carousel").owlCarousel({
-  loop: true,
-  margin: 10,
-  autoplay: true,
-  responsiveClass: true,
-  responsive: {
-    0: {
-      items: 1,
-    },
-    600: {
-      items: 2,
-    },
-    1000: {
-      items: 3,
-    },
-  },
-});
-
-/********** screenshots*********** */
-$(".screenshots-carousel").owlCarousel({
-  loop: true,
-  margin: 10,
-  autoplay: true,
-  responsiveClass: true,
-  responsive: {
-    0: {
-      items: 1,
-    },
-    600: {
-      items: 2,
-    },
-    1000: {
-      items: 4,
-    },
-  },
-});
-
 /****************** page scrolling ***************/
 $.scrollIt({
   topOffset: -50,
@@ -102,6 +59,13 @@ function typeText(message) {
     });
 }
 
+function loopTexts(texts) {
+  for (let i = 0; i < texts.length; i++) {
+    setTimeout(() => typeText(texts[i]), 4800 * i);
+  }
+  setTimeout(() => loopTexts(texts), 4800 * texts.length);
+}
+
 $(document).ready(function () {
   $(".nav-link").click(function () {
     $(".navbar-collapse").collapse("hide");
@@ -113,18 +77,17 @@ $(document).ready(function () {
     "40k Burger",
     "30% Off Dinner Menu",
     "All Tacos 20k",
+    "20K Sushi Saturday",
     "60K Vegan Buffet",
-    "All You Aan Eat Pancakes",
+    "All You Can Eat Pancakes",
     "Free-Flow Cocktails",
     "55K Pasta Wednesday",
     "2 For 1 Beers",
     "60K Brunch",
-    "Saturday Pizza Party",
+    "Sunday Pizza Party",
     "2 for 1 Ramen",
     "50% Off Daily Baked",
   ];
 
-  for (let i = 0; i < texts.length; i++) {
-    setTimeout(() => typeText(texts[i]), 4800 * i);
-  }
+  loopTexts(texts);
 });
