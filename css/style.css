@@ -276,7 +276,7 @@ ul {
 }
 
 .navbar>.container {
-    padding: 0 15px;
+    padding: 0;
 }
 
 .navbar .navbar-brand {
@@ -314,6 +314,10 @@ ul {
 .navbar .nav-item .nav-link.active::before,
 .navbar .nav-item .nav-link:hover::before {
     transform: scale(1);
+}
+
+.navbar p{
+    line-height: 1;
 }
 
 
@@ -878,4 +882,12 @@ ul {
         margin-bottom: 0;
         margin:auto;
       }
+    .navbar .navbar-brand {
+        padding-bottom: 0;        
+        padding-top: 0;
+    }
+
+    .navbar p{
+        font-size:14px;
+    }
 }
